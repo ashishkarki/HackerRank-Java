@@ -4,8 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-//  Time Complexity: O(n + m)
-// Space Complexity: O(1)
+// NOT FULLY WORKING - IGNORE
 public class MyClimbingTheLeaderboard {
     public static void main(String[] args) {
         // save input by discarding duplicates to build our leaderboard
