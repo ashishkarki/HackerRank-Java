@@ -1,4 +1,4 @@
-package com.karkia.algorithms.sorting;
+package com.karkia.algorithms.sorting.insertionSort;
 
 import java.util.Scanner;
 

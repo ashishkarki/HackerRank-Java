@@ -1,4 +1,4 @@
-package com.karkia.algorithms.sorting;
+package com.karkia.algorithms.sorting.countingSort;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -7,7 +7,7 @@ import java.util.*;
 
 // https://www.hackerrank.com/challenges/countingsort1/problem?h_r=next-challenge&h_v=zen
 // Time Complexity: O(n+k) //n is the total numbers and k is total unique numbers
-//Space Complexity: O(k) //we have to initialize an array to the number of unique numbers
+// Space Complexity: O(n) //we have to initialize an array equal to n
 public class CountingSort1 {
     // Complete the countingSort function below.
     static int[] countingSort(int[] arr) {
