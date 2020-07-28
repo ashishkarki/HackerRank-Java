@@ -2,30 +2,27 @@ package com.karkia.algorithms.sorting.insertionSort;
 
 import java.util.Scanner;
 
-// https://www.hackerrank.com/challenges/insertionsort2/problem?h_r=next-challenge&h_v=zen
-//Time Complexity: O(n^2)
-//Space Complexity: O(1)
-public class InsertionSort_Part2Final {
-    static void insertionSort2(int[] arr) {
+// Using Insertion sort
+public class RunningTimeOfAlgos {
+    static void shiftCounter(int[] arr) {
+        int totalShifts = 0;
         for (int i = 1; i < arr.length; i++) {
-            System.out.println("i:" + i);
             for (int j = i; j > 0; j--) {
-                System.out.println("j:" + j);
                 if (arr[j] < arr[j - 1]) {
-                    System.out.println("swapping, arr[j]:" + arr[j] + ", arr[j-1]:" + arr[j - 1]);
-                    // swap and bring them to right places for now
-                    int tmp = arr[j];
-                    arr[j] = arr[j - 1];
-                    arr[j - 1] = tmp;
+                    // the item on the right is smaller, so move it into left side
+                    final int tmp = arr[j - 1];
+                    arr[j - 1] = arr[j];
+                    arr[j] = tmp;
+                    totalShifts++;
                 } else {
-                    System.out.println("Right spot - no swapping");
-                    // since, we are sorting ascending,
-                    // j-1 and j are in the right spot for now
+                    // since the leftmost element on the left side is already greater than
+                    // the right element i.e. arr[j], NO further comparison needed
                     break;
                 }
             }
-            printArray(arr);
         }
+
+        System.out.println(totalShifts);
     }
 
     private static final Scanner scanner = new Scanner(System.in);
@@ -42,7 +39,7 @@ public class InsertionSort_Part2Final {
         }
 
         scanner.close();
-        insertionSort2(arr);
+        shiftCounter(arr);
     }
 
     private static void printArray(int[] ar) {
