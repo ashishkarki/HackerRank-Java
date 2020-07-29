@@ -15,8 +15,8 @@ public class MarcsCakewalk {
         long multiplier = 1;
         long miles = 0;
 
-        for (int i = 0; i < calories.length; i++) {
-            miles += calories[i] * multiplier;
+        for (Integer calorie : calories) {
+            miles += calorie * multiplier;
             multiplier *= 2;
         }
 
