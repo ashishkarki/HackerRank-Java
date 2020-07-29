@@ -12,11 +12,6 @@ public class GemStones {
         int arrSize = scanner.nextInt();
         scanner.nextLine();
 
-//        String arr[] = new String[arrSize];
-//        for (int i = 0; i < arrSize; i++) {
-//            arr[i] = scanner.nextLine();
-//        }
-
         // read the first string into our set
         Set<Character> gemstones = getSetFromString(scanner.nextLine());
 
