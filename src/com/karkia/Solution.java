@@ -1,31 +1,37 @@
 package com.karkia;
 
-import java.io.*;
-import java.math.BigInteger;
-import java.util.*;
+import java.util.Scanner;
 
 class Solution {
-    public static void main(String[] argh) {
-        Scanner in = new Scanner(System.in);
-        int n = in.nextInt();
-        in.nextLine();
-        Map<String, Integer> namePhoneMap = new LinkedHashMap<>();
-        for (int i = 0; i < n; i++) {
-            String name = in.nextLine();
-            int phone = in.nextInt();
-            in.nextLine();
-
-            namePhoneMap.put(name, phone);
+    //sumDigits function
+    static int sumDigits(int n, int sum) {
+        // Basic Case to stop the recursion
+        System.out.println("n:" + n + ", sum:" + sum);
+        if (n == 0) {
+            return sum;
         }
-        while (in.hasNext()) {
-            String query = in.nextLine();
 
-            String print = namePhoneMap.get(query) == null ? "Not found" : query + "=" + namePhoneMap.get(query);
-            System.out.println(print);
+        sum = sum + n % 10;  //recursive variable to keep the digits sum
+        n = n / 10;
+        return sumDigits(n, sum); //returning sum to print it.
+
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String[] nk = scanner.nextLine().split(" ");
+        String p = "";
+        for (int i = 0; i < Integer.parseInt(nk[1]); i++) {
+            p += nk[0];
         }
+
+        int sum = sumDigits(Integer.parseInt(p), 0);
+        while (Integer.toString(sum).length() > 1) {
+            sumDigits(sum, 0);
+        }
+        System.out.println(sum);
     }
 }
-
 
 
 
