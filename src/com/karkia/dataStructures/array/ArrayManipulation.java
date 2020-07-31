@@ -1,4 +1,4 @@
-package com.karkia.dataStructures;
+package com.karkia.dataStructures.array;
 
 import java.util.Arrays;
 import java.util.Scanner;
