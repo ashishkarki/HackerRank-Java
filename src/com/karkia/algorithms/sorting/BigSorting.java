@@ -2,7 +2,6 @@ package com.karkia.algorithms.sorting;
 
 import java.io.IOException;
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.Scanner;
 
 // https://www.hackerrank.com/challenges/big-sorting/problem

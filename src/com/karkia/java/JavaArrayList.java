@@ -1,6 +1,7 @@
 package com.karkia.java;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Scanner;
 
 // https://www.hackerrank.com/challenges/java-arraylist/problem
 public class JavaArrayList {

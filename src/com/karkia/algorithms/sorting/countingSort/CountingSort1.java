@@ -1,9 +1,7 @@
 package com.karkia.algorithms.sorting.countingSort;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.util.*;
+import java.util.Scanner;
 
 // https://www.hackerrank.com/challenges/countingsort1/problem?h_r=next-challenge&h_v=zen
 // Time Complexity: O(n+k) //n is the total numbers and k is total unique numbers

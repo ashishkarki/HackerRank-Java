@@ -1,7 +1,6 @@
 package com.karkia.java;
 
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.Scanner;
 import java.util.Set;
 

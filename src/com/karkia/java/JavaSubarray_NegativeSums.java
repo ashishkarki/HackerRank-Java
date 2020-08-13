@@ -1,6 +1,5 @@
 package com.karkia.java;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class JavaSubarray_NegativeSums {

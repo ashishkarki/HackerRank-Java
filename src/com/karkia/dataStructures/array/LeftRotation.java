@@ -1,6 +1,5 @@
 package com.karkia.dataStructures.array;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 // https://www.hackerrank.com/challenges/array-left-rotation/problem

@@ -1,6 +1,5 @@
 package com.karkia.java;
 
-import java.util.List;
 import java.util.Scanner;
 
 public class Java1DArrayPart2 {
